@@ -1,18 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thời Tiết</title>
+    <title>WeatherInfo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <div class="main">
         <div class="header">
-
+            <div class="logo">
+                <div class="logo-img">
+                    <img src="./img/logo.png" alt="">
+                </div>
+                <div class="web-name">
+                    <h2>WeatherInfo</h2>
+                </div>
+            </div>
         </div>
         <div class="content">
-            
+            <div class="search-box">
+                <i class="search-icon fas fa-search"></i>
+                <form action="">
+                    <input type="text" id="nameCityInput" placeholder="Nhập tên thành phố">
+                </form>
+            </div>
+            <div class="search-results">
+                <h2 class="result-header">Vui lòng nhập tên thành phố để xem dự báo thời tiết
+                    <span class="search-keyword">
+                    </span>
+                </h2>
+                <div class="results-list">
+                    <!-- <div class="result-item">
+                        <div class="item-day">
+                            <p class="">Ngày 15/8</p>
+                        </div>
+                        <div class="item-icon">
+                            <i class="wi wi-day-hail"></i>
+                        </div>
+                        <div class="item-temp">
+                            <p class="average-temp">34</p>
+                        </div>
+                        <div class="item-des">
+                            <p class="des-main">Một chút mưa</p>
+                            <div class="des-sub">
+                                <i class="wi wi-day-thunderstorm"></i>
+                                <p class="sub-text">Mưa dông ở một số phần khu vực</p>
+                            </div>
+                        </div>
+                        <div class="item-humi">
+                            <i class="wi wi-humidity"></i>
+                            <p class="humi-text">70%</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
         </div>
     </div>
 </body>
+<script src="./script.js"></script>
 </html>
